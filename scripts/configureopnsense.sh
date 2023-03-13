@@ -63,9 +63,9 @@ sed -i "" "s/reboot/shutdown -r +1/g" opnsense-bootstrap.sh.in
 sh ./opnsense-bootstrap.sh.in -y -r "22.1"
 
 # Add Azure waagent
-fetch https://github.com/Azure/WALinuxAgent/archive/refs/tags/v2.7.0.6.tar.gz
-tar -xvzf v2.7.0.6.tar.gz
-cd WALinuxAgent-2.7.0.6/
+fetch https://github.com/Azure/WALinuxAgent/archive/refs/tags/v2.9.0.4.tar.gz
+tar -xvzf v2.9.0.4.tar.gz
+cd WALinuxAgent-2.9.0.4/
 python3 setup.py install --register-service --lnx-distro=freebsd --force
 cd ..
 
